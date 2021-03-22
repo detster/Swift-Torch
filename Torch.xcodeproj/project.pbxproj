@@ -13,6 +13,8 @@
 		AD55F9D826082E2800B41659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD55F9D626082E2800B41659 /* Main.storyboard */; };
 		AD55F9DA26082E2A00B41659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD55F9D926082E2A00B41659 /* Assets.xcassets */; };
 		AD55F9DD26082E2A00B41659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD55F9DB26082E2A00B41659 /* LaunchScreen.storyboard */; };
+		AD55F9E6260845EF00B41659 /* _LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55F9E5260845EF00B41659 /* _LaunchViewController.swift */; };
+		AD55F9E9260849DB00B41659 /* TorchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55F9E8260849DB00B41659 /* TorchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AD55F9D926082E2A00B41659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD55F9DC26082E2A00B41659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD55F9DE26082E2A00B41659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD55F9E5260845EF00B41659 /* _LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _LaunchViewController.swift; sourceTree = "<group>"; };
+		AD55F9E8260849DB00B41659 /* TorchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AD55F9D926082E2A00B41659 /* Assets.xcassets */,
 				AD55F9DB26082E2A00B41659 /* LaunchScreen.storyboard */,
 				AD55F9DE26082E2A00B41659 /* Info.plist */,
+				AD55F9E5260845EF00B41659 /* _LaunchViewController.swift */,
+				AD55F9E8260849DB00B41659 /* TorchViewController.swift */,
 			);
 			path = Torch;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD55F9D526082E2800B41659 /* ViewController.swift in Sources */,
+				AD55F9E9260849DB00B41659 /* TorchViewController.swift in Sources */,
 				AD55F9D126082E2800B41659 /* AppDelegate.swift in Sources */,
 				AD55F9D326082E2800B41659 /* SceneDelegate.swift in Sources */,
+				AD55F9E6260845EF00B41659 /* _LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
