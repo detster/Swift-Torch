@@ -24,7 +24,7 @@ class _LaunchViewController: UIViewController {
     }
     
     func goToTorch(){
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "torch") as! ViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "torch") as! TorchViewController
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }

@@ -37,7 +37,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="ViewController" customModule="Torch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="ViewController" customModule="Torch" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Zul-1y-Htz" id="Zlj-Oj-aKw"/>
                         <outlet property="userTextField" destination="tzY-OW-1RG" id="YwQ-oJ-TI3"/>
-                        <segue destination="a7q-DI-Us1" kind="show" identifier="login" id="Paw-Tr-gDc"/>
+                        <segue destination="a7q-DI-Us1" kind="show" identifier="toTorch" id="Paw-Tr-gDc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,7 +114,7 @@
         <!--Torch View Controller-->
         <scene sceneID="SlX-pu-AX9">
             <objects>
-                <viewController storyboardIdentifier="torch" modalPresentationStyle="fullScreen" id="a7q-DI-Us1" customClass="TorchViewController" customModule="Torch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="torch" modalPresentationStyle="fullScreen" id="a7q-DI-Us1" customClass="TorchViewController" customModule="Torch" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e3n-4s-udv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

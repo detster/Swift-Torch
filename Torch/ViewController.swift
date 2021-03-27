@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
         if userTextField.text == user && passwordTextField.text == password{
             UserDefaults.standard.setValue(true, forKey: "isUserLog")
-            performSegue(withIdentifier: "torch", sender: nil)
+            performSegue(withIdentifier: "toTorch", sender: nil)
         }else{
             let alerta = UIAlertController(title: "Error", message: "Bad user or password", preferredStyle: .alert)
             alerta.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))

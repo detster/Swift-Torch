@@ -10,23 +10,28 @@ class TorchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         turnOff()
-        turnTorch()
+        turnTorch(accion: false)
     }
     
     @IBAction func torchButton(_ sender: Any) {
-        turnTorch()
+        if view.backgroundColor == UIColor.black{
+            turnOn()
+            turnTorch(accion:true)
+        }else{
+            turnOff()
+            turnTorch(accion:false)
+        }
     }
     
-    func turnTorch(){
+    func turnTorch(accion: Bool ){
         guard let device = AVCaptureDevice.default(for: AVMediaType.video),device.hasTorch
         else {return}
+        
         do{
             try device.lockForConfiguration()
-            if view.backgroundColor == UIColor.black{
-                turnOn()
+            if accion {
                 device.torchMode = .on
             }else{
-                turnOff()
                 device.torchMode = .off
             }
             device.unlockForConfiguration()
@@ -36,16 +41,16 @@ class TorchViewController: UIViewController {
     }
     
     func turnOn(){
-        booIV.isHidden=false
-        booShyIV.isHidden=true
+        booIV.isHidden=true
+        booShyIV.isHidden=false
         view.backgroundColor=UIColor.white
         `switch`.setTitle("On", for: .normal)
         `switch`.backgroundColor = UIColor.green
     }
     
     func turnOff(){
-        booIV.isHidden=true
-        booShyIV.isHidden=false
+        booIV.isHidden=false
+        booShyIV.isHidden=true
         view.backgroundColor=UIColor.black
         `switch`.setTitle("Off", for: .normal)
         `switch`.backgroundColor = UIColor.red
